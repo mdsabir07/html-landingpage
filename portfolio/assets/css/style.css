@@ -1,0 +1,633 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i|Metal+Mania|Rum+Raisin|Mukta:300,400');
+
+.alignleft {
+  float: left;
+  margin-right: 15px;
+}
+.alignright {
+  float: right;
+  margin-left: 15px;
+}
+.aligncenter {
+  display: block;
+  margin: 0 auto 15px;
+}
+input[type="text"], input[type="email"], input[type="tel"], input[type="url"], input[type="search"], input[type="password"], textarea {
+  
+}
+a:hover {
+    text-decoration: none;
+}
+a:focus, input:focus, button:focus, textarea:focus {outline: 0 solid;}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-family: 'Metal Mania', cursive;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+body {
+    font-family: 'Rum+Raisin', sans-serif;
+    font-size: 15px;
+    background: rgba(10, 240, 241, .1);
+}
+/*=======section padding CSS=======*/
+.section-padding.padding-bottom-0 {padding-bottom: 0;}
+.section-padding.padding-top-0 {padding-top: 0;}
+.section-padding {
+    padding: 80px 0;
+}
+/*=======btn CSS=======*/
+.boxed-btn {
+    border: 1px solid #0ABEF1;
+    background: #0ABEF1;
+    display: inline-block;
+    padding: 8px 15px;
+    margin-right: 5px;
+    transition: .3s;
+    font-weight: 600;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .4);
+}
+.boxed-btn:hover, .boxed-btn.bordered-btn {
+    background: transparent;
+    color: #0ABEF1;
+}
+.boxed-btn.bordered-btn:hover {
+    background: #0ABEF1;
+    color: #fff;
+}
+.boxed-btn.see-more {
+    color:  #fff;
+    text-transform:  uppercase;
+    border-radius:  2px;
+    margin-top: 20px;
+}
+.boxed-btn.see-more:hover {
+    background:  #000;
+    border-color:  #000;
+}
+.about-text .boxed-btn {
+    background: #0ABEF1;
+    border: none;
+    transition: .5s;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 3px;
+}
+.about-text .boxed-btn:hover {
+    background: #000;
+    color: #fff;
+}
+#qoute-area .boxed-btn {
+    border-radius: 2px;
+    margin-top: 15px;
+}
+/*=======Menu CSS=======*/
+.trigger-menu {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    width: 50px;
+    height: 42px;
+    padding: 4px 8px;
+    background: #0ABEF1;
+    box-sizing: border-box;
+    cursor: pointer;
+    z-index: 2;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .5);
+    border-radius: 2px;
+}
+.trigger-menu.active {
+    padding-top: 8px;
+}
+.trigger-menu span {
+    width: 100%;
+    height: 4px;
+    background: #000;
+    margin: 6px 0;
+    display: block;
+    transition: .3s;
+}
+.trigger-menu.active span {
+    position: absolute;
+    width: calc(100% - 16px);
+    height: calc(50% - 8px);
+}
+.trigger-menu.active span:nth-child(1) {
+    transform: rotate(45deg);
+}
+.trigger-menu.active span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+.trigger-menu.active span:nth-child(2) {
+    display: none;
+}
+.sidebar-menu {
+    position: fixed;
+    left: -300px;
+    top: 0;
+    height: 100%;
+    width: 300px;
+    background: rgba(0, 0, 0, .8);
+    transition: .3s;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    z-index: 2;
+}
+.sidebar-menu.active {
+    left: 0;
+}
+.sidebar-menu a img {
+    width:  80px;
+    margin-bottom: 50px;
+}
+.sidebar-menu .menu {
+    margin:  0;
+    padding:  0;
+    list-style:  none;
+}
+.sidebar-menu .menu li a {
+    display:  block;
+    color:  #fff;
+    font-size:  18px;
+    font-weight:  500;
+    text-transform:  uppercase;
+    padding:  8px;
+    transition:  .3s;
+}
+.sidebar-menu .menu li:hover a {
+    background: #0ABEF1;
+}
+.sidebar-menu .social-links {
+    margin:  100px 0 0 0;
+    padding: 0;
+    list-style:  none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+}
+.sidebar-menu .social-links li {
+    display: inline-block;
+    margin: 0 2px 0 2px
+}
+.sidebar-menu .social-links li a {
+    display: block;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    transition: .2s;
+}
+.sidebar-menu .social-links li:hover a {
+    background: #0ABEF1;
+}
+/*====== Preloader CSS ========*/
+#preloader {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    background: #0F0D0E;
+}
+#preloader img {
+    margin-left: 47%;
+    margin-top: 20%;
+}
+
+/*====== Hero Area CSS ========*/
+.hero-area {padding-bottom: 80px;}
+.hero-area-bg {
+    width: 100%;
+    height: 700px;
+    margin: 0px auto;
+    background-color: #000;
+    background-image: url(../img/earth.gif), url(../img/night-sky-j.jpg);
+    background-position: 120% 70px, 0px 0px, 0px 0px;
+    background-repeat: no-repeat, repeat-x, repeat-x;
+    animation: animate-background linear 50s infinite;
+    background-attachment: fixed;
+}
+@keyframes animate-background {
+    from { background-position: 120% 70px, 0px 0px, 0px 0px;  } 
+    to { background-position: -30% 70px, -1000px 0px, -500px 0px; }
+}
+.my-photo {
+    border-radius: 50%;
+    background: #ddd;
+    width: 80px;
+    margin-top: -40px;
+    text-align: center;
+    margin-left: 47%;
+}
+.hero-area-bg .d-table-cell {
+    vertical-align: middle;
+    text-align: center;
+}
+.hero-area-bg, .hero-area-bg a {
+    color: #fff;
+}
+
+/*========Filter Area CSS===========*/
+.my-title {
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+.my-title span {
+    color: #0ABEF1;
+}
+.my-title h1 {
+    border-right: 3px solid #0ABEF1;
+}
+.project-titles {
+    margin: 0 0 0;
+    padding: 0;
+    list-style: none;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.project-titles li {
+    padding: 5px 15px;
+    border: 1px solid #212529;
+    margin-right: 5px;
+    transition: .3s;
+    cursor: pointer;
+    display: inline-block;
+}
+.project-titles li.active {
+    background: #0ABEF1;
+    border-color: #0ABEF1;
+    color: #fff;
+}
+.project-content {
+    position: relative;
+    z-index: 1;
+    height: 210px;
+    width: 100%;
+}
+.project-content:after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background: rgba(10, 190, 210, .3);
+    content: "";
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+}
+.single-project-item:hover .project-content:after {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+}
+.project-content h3 {
+    position: absolute;
+    width: 100%;
+    top: 80%;
+    left: 0;
+    text-align: center;
+    background: #0ABEF1;
+    color: #fff;
+    padding: 5px 0;
+    z-index: 1;
+    transition: .7s;
+    opacity: 0;
+    visibility: hidden;
+    margin-bottom: 0;
+    margin-top: -1px;
+}
+.single-project-item:hover .project-content h3 {
+    opacity: 1;
+    visibility: visible;
+}
+.project-items-hover img {
+    position: absolute;
+    left: -30px;
+    top: 100px;
+    height: 20px;
+    width: 30px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .7s;
+    z-index: 1;
+}
+.img-effect {
+    height: 210px;
+    margin-top: 28px;
+    display: block;
+}
+.single-project-item:hover .project-items-hover img {
+    opacity: 1;
+    visibility: visible;
+    left: 45%;
+}
+/*========About Area CSS===========*/
+.about-info {
+    background: #FCFCFC;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, .1);
+}
+.about-info .service-text {
+    padding-left: 50px;
+}
+.s-img svg, .s-img img {
+    float: left;
+    font-size: 35px;
+    margin-top: 15px;
+}
+.s-img img {
+    width: 30px;
+}
+.about-info h3 {
+    margin-bottom: 0;
+}
+.about-info a {
+    color: #212564;
+}
+/*========Client Area CSS===========*/
+.client-info {
+    background: #0B0C10;
+    color: #fff;
+    padding: 40px 0;
+}
+.single-data-count svg {
+    margin-right: 10px;
+    display: inline-block;
+}
+.single-data-count span {
+    font-size:  32px;
+    font-weight:  700;
+    font-family:  "Metal Mania";
+    display:  inline-block;
+    margin-top:  -9px;
+}
+.single-data-count img {
+    width: 35px;
+    display: inline-block;
+    margin-right: 5px;
+    margin-top: -12px;
+}
+.single-data-count p {
+    margin-bottom: 0;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.my-title h1 {
+    position: relative;
+}
+.my-title h1:after {
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 47px;
+    height: 2px;
+    background: #000;
+    content: "";
+}
+
+/*========Slkill Area CSS=======*/
+.single-bar-item h3 {
+    margin: 0;
+    letter-spacing: 2px;
+    font-size:  30px;
+}
+.single-bar-item {
+    border: 1px solid rgba(0, 0, 0, .1);
+    padding: 10px;
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, .1);
+    background: #FCFCFC;
+    border-radius:  2px;
+    margin-top: 25px;
+}
+.my-title.skill-title {
+    margin: 0;
+}
+.single-bar-item h3 span {
+    display:  block;
+    text-transform:  capitalize;
+    font-size: 25px;
+}
+
+/*=======Why Area CSS=======*/
+.why-area {
+    background: #0B0C10;
+    color: #fff;
+    padding: 50px 0;
+}
+.why-title h2 {
+    font-size: 40px;
+    position: relative;
+    margin-bottom: 40px;
+}
+.why-title h2:after {
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 60px;
+    height: 3px;
+    background: #fff;
+    content: "";
+}
+.why-area p img {
+    width: 30px;
+    margin-right: 15px;
+}
+.why-area p svg {
+    margin-right: 15px;
+    display: inline-block;
+}
+.why-area h3 {
+    margin-bottom: 30px;
+}
+.service-text {
+    padding-left: 57px;
+    font-size: 14px;
+}
+
+/*====== Testimonial Area CSS ======*/
+#testimonial {
+    background: #0B0C10;
+    margin-top: 80px;
+    padding-top: 80px;
+}
+.testi-img img {
+    max-width: 60px;
+    border-radius: 50%;
+    border: 3px solid #0ABEF1;
+}
+.testimonial-info {
+    color: #fff;
+    font-weight: 300;
+}
+.testimonial-info h3 {
+    font-size: 30px;
+    margin: 0;
+}
+.testimonial-info h5 {
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+.author-says {
+    position: relative;
+    margin: 0;
+}
+.author-says:before {
+    position: absolute;
+    content: "‘‘";
+    opacity: .2;
+    font-family: fontawesome;
+    font-size: 40px;
+    left: -20px;
+    bottom: -3px;
+}
+.author-says:after {
+    position: absolute;
+    top: 10px;
+    content: "’’";
+    font-family: fontawesome;
+    opacity: .2;
+    font-size: 40px;
+}
+/* Owl Carousel CSS */
+.testimonial-carousel .owl-dots div {
+    height: 3px;
+    width: 22px;
+    background: #fff;
+    display: inline-block;
+    margin-right: 10px;
+}
+.testimonial-carousel .owl-dots {
+    position: absolute;
+    left: 50%;
+    bottom: -50px;
+    margin-left: -25px;
+}
+.testimonial-carousel .owl-dots div.active {
+    background: #0ABEF1;
+    width: 30px;
+}
+
+/*======= Quote Area CSS =======*/
+#qoute-area {;
+    padding-top: 80px;
+    background-image: url(../img/web-development2.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    background-attachment: fixed;
+}
+#qoute-area:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .8;
+    z-index: -1;
+    content: "";
+}
+#qoute-area, #qoute-area a {
+    color: #fff;
+}
+#qoute-area h3 {
+    font-size: 30px;
+    margin: 0;
+}
+
+/*========Contact Area CSS========*/
+#contact {
+    background: rgba(10, 190, 241, .03);
+    color: #000;
+}
+#contact .my-title span {
+    color:  #000;
+}
+#contact .my-title h1 {
+    border-right:  none;
+}
+.my-title h1:after {
+    background: none;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    border: 1px solid #0ABEF1;
+    padding: 8px;
+    font-family: "Rum Raisin";
+}
+.contact-form input {
+    margin-bottom: 20px;
+}
+.contact-form textarea {height: 99px;overflow: hidden;}
+
+.contact-form input[type=tel] {margin-bottom: 0;}
+
+.contact-form input[type=submit] {
+    height: 37px;
+    background: #0ABEF1;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 2px;
+    transition: .3s;
+    margin-bottom: 0;
+    margin-top: 17px;
+    padding: 3px 0;
+}
+.contact-form input[type=submit]:hover {
+    background: #000;
+}
+
+/*======= Footer Area CSS =======*/
+#footer {
+    background: #0B0C10;
+    color: #fff;
+    padding: 20px;
+    font-family: "Mukta";
+    text-align: center;
+}
+#footer a {
+    color: #0ABEF1;
+    transition: .3s;
+}
+#footer a:hover {
+    color: #299A0B;
+    text-decoration: underline;
+}
+
+/*======== Scroll to top CSS ========*/
+#scroll-top {
+    background: #0ABEF1;
+    color: #fff;
+    position: absolute;
+    right: 20px;
+    width: 25px;
+    margin-top: -40px;
+    text-align: center;
+    line-height: 30px;
+    transition: .3s;
+}
+#scroll-top:hover {
+    background: transparent;
+    border: 1px solid #0ABEF1;
+}
